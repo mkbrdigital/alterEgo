@@ -1,12 +1,10 @@
 import React from 'react';
-import './Navigation.scss';
+import './Footer.scss';
 
 const Footer = () => {
     return (
         <footer className="footer">
-            <p>Footer goes here</p>
             
-
         </footer>
     )
 }

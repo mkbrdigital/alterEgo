@@ -3,14 +3,16 @@
     background-color: #505050;
 }
 
-footer {
-    background-color: #505050;
+.nav {
+    max-width: 1366px;
+    margin: auto;
 }
 
 .logo-container {
-    padding: 16px 32px;
     display: flex;
     align-items: baseline;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 .fa-dragon {
@@ -22,4 +24,7 @@ footer {
     padding-left: 4px;
     font-size: 2rem;
     color: rgb(211, 211, 44);
+    span {
+        color: rgb(44, 184, 44);
+    }
 }
