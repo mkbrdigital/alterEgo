@@ -1,0 +1,25 @@
+.header {
+    height: 84px;
+    background-color: #505050;
+}
+
+footer {
+    background-color: #505050;
+}
+
+.logo-container {
+    padding: 16px 32px;
+    display: flex;
+    align-items: baseline;
+}
+
+.fa-dragon {
+    font-size: 3rem;
+    color: rgb(211, 211, 44);
+}
+
+.header-title {
+    padding-left: 4px;
+    font-size: 2rem;
+    color: rgb(211, 211, 44);
+}
