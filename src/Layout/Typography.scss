@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'fontRegular';
+    src: url('../../Layout/Fonts/ElMessiri-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../../Layout/Fonts/elmessiri-regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../../Layout/Fonts/elmessiri-regular-webfont.woff2') format('woff2'); /* Super Modern Browsers */
+  }
+  @font-face {
+    font-family: 'fontBold';
+    src: url('../../Layout/Fonts/ElMessiri-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../../Layout/Fonts/elmessiri-bold-webfont.woff')  format('woff'), /* Pretty Modern Browsers */
+         url('../../Layout/Fonts/elmessiri-bold-webfont.woff2') format('woff2'); /* Super Modern Browsers */
+  }

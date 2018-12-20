@@ -5,7 +5,7 @@ class Homepage extends Component {
     render() {
         return (
             <div className="homepage--container">
-                <p>HOMEPAGE</p>
+                <p className="homepage--title">HOMEPAGE</p>
             </div>
         )
     }

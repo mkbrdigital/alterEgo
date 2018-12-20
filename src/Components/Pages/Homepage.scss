@@ -1,4 +1,11 @@
+@import '../../Layout/Typography';
+
 .homepage--container {
-    max-width: 1366px; 
+    max-width: 1200px; 
     margin: auto;   
+}
+
+.homepage--title {
+    font-family: 'fontBold', Fallback, sans-serif;
+    font-size: 30px;
 }
