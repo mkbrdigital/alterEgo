@@ -10,26 +10,23 @@
 .nav {
     max-width: 1200px;
     margin: auto;
+    padding: 16px;
 }
 
 .logo-container {
     display: flex;
     align-items: baseline;
-    padding-top: 16px;
-    padding-bottom: 16px;
+
 }
 
 .fa-dragon {
     font-size: 3rem;
     color: $yellow;
-    @include lg {
-        color: red;
-    }
 }
 
 .header-title {
     padding-left: 4px;
-    font-size: 2rem;
+    font-size: 2em;
     color: $yellow;
     font-family: 'fontRegular';
     span {
