@@ -1,6 +1,9 @@
+@import '../../Layout/Typography';
+@import '../../Layout/Colors';
+
 .header {
     height: 84px;
-    background-color: #505050;
+    background-color:$grey;
 }
 
 .nav {
@@ -17,14 +20,15 @@
 
 .fa-dragon {
     font-size: 3rem;
-    color: rgb(211, 211, 44);
+    color: $yellow;
 }
 
 .header-title {
     padding-left: 4px;
     font-size: 2rem;
-    color: rgb(211, 211, 44);
+    color: $yellow;
+    font-family: 'fontRegular';
     span {
-        color: rgb(44, 184, 44);
+        color: $green;
     }
 }
