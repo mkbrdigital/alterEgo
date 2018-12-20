@@ -1,5 +1,6 @@
-@import '../../Layout/Typography';
-@import '../../Layout/Colors';
+@import '../../Layout/typography';
+@import '../../Layout/colors';
+@import '../../Layout/mixins.scss';
 
 .header {
     height: 84px;
@@ -21,6 +22,9 @@
 .fa-dragon {
     font-size: 3rem;
     color: $yellow;
+    @include lg {
+        color: red;
+    }
 }
 
 .header-title {
