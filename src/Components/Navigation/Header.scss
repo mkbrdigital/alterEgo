@@ -3,7 +3,6 @@
 @import '../../Layout/mixins.scss';
 
 .header {
-    height: 84px;
     background-color:$grey;
 }
 
@@ -16,20 +15,29 @@
 .logo-container {
     display: flex;
     align-items: baseline;
-
 }
 
 .fa-dragon {
-    font-size: 3rem;
+    font-size: 3.4rem;
     color: $yellow;
+
+    @include lg {
+        font-size: 4.4rem;
+    }
+    
 }
 
 .header-title {
     padding-left: 4px;
-    font-size: 2em;
+    font-size: 2.8em;
     color: $yellow;
     font-family: 'fontRegular';
+
     span {
         color: $green;
+    }
+
+    @include lg {
+        font-size: 3.8rem;
     }
 }
