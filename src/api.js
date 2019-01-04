@@ -1,7 +1,6 @@
-const express = require('express');
+import axios from 'axios';
 import apiKey from "../config";
 import accountXuid from "../config";
-import axios from 'axios';
 const url = "https://xboxapi.com/v2/";
 
 export const fetchGamercard = async query => {
