@@ -1,14 +1,14 @@
 import axios from 'axios';
-import apiKey from "../config";
-import accountXuid from "../config";
-const url = "https://xboxapi.com/v2/";
+import { apiKey, accountXuid } from './config';
+const url = "https://xboxapi.com/v2";
 
-export const fetchGamercard = async query => {
+export const fetchGamerTag = async query => {
     const { data } = await axios.get(`${url}/${accountXuid}/gamercard`, {
         headers: {
-            "user-key": apiKey,
+            "X-AUTH": apiKey,
             Accept: "application/json"
           }
     });
-    return data;
+    // return data;
+    console.log(data);
 }
