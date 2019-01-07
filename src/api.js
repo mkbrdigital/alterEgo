@@ -9,6 +9,6 @@ export const fetchGamerTag = async query => {
             Accept: "application/json"
           }
     });
-    // return data;
-    console.log(data);
+    return data;
+    // console.log(data);
 }

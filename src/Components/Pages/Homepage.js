@@ -4,13 +4,14 @@ import * as api from '../../api';
 
 class Homepage extends Component {
     state = {
-        gamertag: {}
+        gamertag: "",
+        gamerscore: "",
     };
 
     componentDidMount = async () => {
         try {
-            const {gamertag} = await api.fetchGamerTag();
-            this.setState({gamertag});
+            const { gamertag, gamerscore } = await api.fetchGamerTag();
+            this.setState({gamertag, gamerscore});
         } catch (err) {
             // if (err.response.status === 404) this.props.history.push("404");
         }
@@ -24,7 +25,7 @@ class Homepage extends Component {
     //   };
 
     render() {
-        console.log(this.gamertag);
+        console.log(this.state);
         return (
             <div className="homepage--container">
                 <p className="homepage--title">HOMEPAGE</p>
