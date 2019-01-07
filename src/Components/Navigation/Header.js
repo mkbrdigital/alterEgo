@@ -8,7 +8,7 @@ class Header extends Component {
                 <div className="nav">
                     <div className="logo-container">
                         <span className="fas fa-dragon"></span>
-                        <p className="header-title">game<span>Played</span></p>
+                        <p className="header-title">alter<span>Ego</span></p>
                     </div>
                 </div>
             </header>

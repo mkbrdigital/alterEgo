@@ -30,9 +30,9 @@ class Homepage extends Component {
             <div className="columns homepage--container">
                 <div className="column gamercard-container">
                     <ul className="xbox-gamercard">
-                        <li><img className="gamerpic" src={this.state.GameDisplayPicRaw} alt="gamerpic"></img></li>
+                        <li><img className="gamerpic" src={this.state.GameDisplayPicRaw} alt="xb-gamerpic"></img></li>
                         <li className="gamertag">{this.state.Gamertag}</li>
-                        <li className="gamerscore">{this.state.Gamerscore}</li>
+                        <li className="gamerscore">{this.state.Gamerscore}<span className="gs">GS</span> </li>
                     </ul>
                 </div>
                 <div className="column gamercard-container">
