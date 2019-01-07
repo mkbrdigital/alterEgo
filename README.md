@@ -1,3 +1,3 @@
-## gamePlayed
+## alterEgo
 
-What kind of gamer are you? Are you a savage sharpshooter or a ponderous adventurer? Track you game stats and progress across all platforms.
+What kind of gamer are you? Track your game stats and progress across (probably not) all platforms. 
