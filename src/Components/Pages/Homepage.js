@@ -27,14 +27,27 @@ class Homepage extends Component {
 
     render() {
         return (
-            <div className="homepage--container">
-                <p className="homepage--title">Your Gamer Profile</p>
-                <div>
-                    <ul>
-                        <li><img src={this.state.GameDisplayPicRaw} alt="gamerpic"></img></li>
-                        <li>{this.state.Gamertag}</li>
-                        <li>{this.state.Gamerscore}</li>
+            <div className="columns homepage--container">
+                <div className="column gamercard-container">
+                    <ul className="xbox-gamercard">
+                        <li><img className="gamerpic" src={this.state.GameDisplayPicRaw} alt="gamerpic"></img></li>
+                        <li className="gamertag">{this.state.Gamertag}</li>
+                        <li className="gamerscore">{this.state.Gamerscore}</li>
                     </ul>
+                </div>
+                <div className="column gamercard-container">
+                    {/* <ul className="xbox-gamercard">
+                        <li><img className="gamerpic" src={this.state.GameDisplayPicRaw} alt="gamerpic"></img></li>
+                        <li className="gamertag">{this.state.Gamertag}</li>
+                        <li className="gamerscore">{this.state.Gamerscore}</li>
+                    </ul> */}
+                </div>
+                <div className="column gamercard-container">
+                    {/* <ul className="xbox-gamercard">
+                        <li><img className="gamerpic" src={this.state.GameDisplayPicRaw} alt="gamerpic"></img></li>
+                        <li className="gamertag">{this.state.Gamertag}</li>
+                        <li className="gamerscore">{this.state.Gamerscore}</li>
+                    </ul> */}
                 </div>
             </div>
         )

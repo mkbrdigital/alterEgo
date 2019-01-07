@@ -15,3 +15,22 @@
         font-size: 3rem;
     }
 }
+
+.gamercard-container {
+
+    .xbox-gamercard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .gamerpic {
+            // max-width: 250px;
+        }
+        .gamertag {
+            font-size: 2.8em;
+        }
+        .gamerscore {
+            font-size: 2.8em;
+        }
+    }
+
+}

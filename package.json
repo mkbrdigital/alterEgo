@@ -5,6 +5,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.2.5",
     "axios": "^0.18.0",
+    "bulma": "^0.7.2",
     "curl": "^0.1.4",
     "express": "^4.16.4",
     "node-sass": "^4.11.0",
