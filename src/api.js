@@ -10,5 +10,4 @@ export const fetchGamerTag = async query => {
           }
     });
     return data;
-    // console.log(data);
 }

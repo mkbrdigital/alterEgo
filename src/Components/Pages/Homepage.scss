@@ -8,33 +8,10 @@
     margin: auto;   
 }
 
-.homepage--title {
-    font-family: 'fontBold', Fallback, sans-serif;
-    font-size: 2rem;
-    @include lg {
-        font-size: 3rem;
-    }
-}
-
-.gamercard-container {
-
-    .xbox-gamercard {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        .gamerpic {
-            max-width: 300px;
-        }
-        .gamertag {
-            font-size: 3.6em;
-        }
-        .gamerscore {
-            font-size: 2.8em;
-        span {
-            font-size: 0.5em;
-        }
-        }
-
-    }
-
-}
+// .homepage--title {
+//     font-family: 'fontBold', Fallback, sans-serif;
+//     font-size: 2rem;
+//     @include lg {
+//         font-size: 3rem;
+//     }
+// }
