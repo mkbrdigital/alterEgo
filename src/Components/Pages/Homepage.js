@@ -5,12 +5,15 @@ import XboxGamertag from './XboxGamertag';
 
 class Homepage extends Component {
     state = {
+        username: "",
+        password: "",
+        loggedIn: false
     };
 
     render() {
         return (
             <div className="homepage--container">
-                <XboxGamertag></XboxGamertag>
+                <XboxGamertag username={this.state.username}/>
             </div>
         )
     }
