@@ -3,7 +3,7 @@
 @import '../../Layout/mixins.scss';
 
 .header {
-    background-color:$grey;
+    background-color:$darkgrey;
 }
 
 .nav {
@@ -14,7 +14,7 @@
 
 .logo-container {
     display: flex;
-    align-items: baseline;
+    // div fits exactly logo:
     &:after {
         content: '';
         display: block;
