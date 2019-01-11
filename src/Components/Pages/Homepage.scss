@@ -5,7 +5,14 @@
 
 .homepage--container {
     max-width: 1200px; 
-    margin: auto;   
+    margin: auto;
+    padding: 16px 0;
+    @include md {
+        padding: 24px 0;
+    }
+    @include lg {
+        padding: 32px 0;
+    }   
 }
 
 // .homepage--title {

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './XboxGamertag.scss';
 import * as api from '../../api';
+import Loading from '../Misc/Loading';
 
 class XboxGamertag extends Component {
     state = {
@@ -26,6 +27,7 @@ class XboxGamertag extends Component {
     //   };
 
     render() {
+        if (this.state.Gamertag.length === 0) return <Loading/>
         return (
             <div className="columns XboxGamertag--container">
                 <div className="column gamercard-container">
