@@ -3,6 +3,7 @@ import './Homepage.scss';
 // import * as api from '../../api';
 import XboxGamertag from './XboxGamertag';
 
+
 class Homepage extends Component {
     state = {
         username: "",
