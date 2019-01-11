@@ -12,9 +12,13 @@
     padding: 16px 0;
 }
 
-.logo-container {
-    display: flex;
-    align-items: baseline;
+.nav-inner-container {
+
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
 }
 
 .fa-dragon {
@@ -40,4 +44,9 @@
     @include lg {
         font-size: 3.8rem;
     }
+}
+
+.home-link {
+    display: flex;
+    align-items: baseline;
 }

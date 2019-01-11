@@ -7,13 +7,13 @@ class Header extends Component {
         return (
             <header className="header">
                 <div className="nav">
-                    <NavLink className="home-link" to="/">
-                        <div className="logo-container">
-                                <span className="fas fa-dragon"></span>
-                                <p className="header-title">alter<span>Ego</span></p>
+                    <div className="nav-inner-container">
+                        <NavLink className="home-link" to="/">
+                            <span className="fas fa-dragon"></span>
+                            <p className="header-title">alter<span>Ego</span></p>
+                        </NavLink>
                         </div>
-                    </NavLink>
-                </div>
+                    </div>
             </header>
         );
     }
