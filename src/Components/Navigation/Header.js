@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { NavLink } from 'react-router-dom'; 
 import './Header.scss';
 
 class Header extends Component {
@@ -6,10 +7,12 @@ class Header extends Component {
         return (
             <header className="header">
                 <div className="nav">
-                    <div className="logo-container">
-                        <span className="fas fa-dragon"></span>
-                        <p className="header-title">alter<span>Ego</span></p>
-                    </div>
+                    <NavLink className="home-link" to="/">
+                        <div className="logo-container">
+                                <span className="fas fa-dragon"></span>
+                                <p className="header-title">alter<span>Ego</span></p>
+                        </div>
+                    </NavLink>
                 </div>
             </header>
         );
