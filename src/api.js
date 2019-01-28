@@ -11,3 +11,23 @@ export const fetchGamerTag = async query => {
     });
     return data;
 }
+
+export const fetch360Games = async query => {
+    const { data } = await axios.get(`${url}/${accountXuid}/xbox360games`, {
+        headers: {
+            "X-AUTH": apiKey,
+            Accept: "application/json"
+          }
+    });
+    return data;
+}
+
+export const fetchXB1Games = async query => {
+    const { data } = await axios.get(`${url}/${accountXuid}/xboxonegames`, {
+        headers: {
+            "X-AUTH": apiKey,
+            Accept: "application/json"
+          }
+    });
+    return data;
+}
