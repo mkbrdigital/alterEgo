@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 import './XboxUserGames.scss';
 import * as api from '../../api';
-// import Loading from '../Misc/Loading';
+import Loading from '../Misc/Loading';
 
 class XboxUserGames extends Component {
     state = {
-        titles: []
+        titles: [],
     };
 
     componentDidMount = async () => {
@@ -26,12 +26,11 @@ class XboxUserGames extends Component {
     //   };
 
     render() {
-        console.log(this.state.titles)
+        console.log(this.state.titles);
+        if (!this.state.titles.length) return <Loading/>;
         return (
             <div className="xbox-games-container">
-               <ul>
-                   <li>Zaladin's played xbox games should display here</li>
-               </ul>
+                <h1>Xbox games list goes here</h1>
             </div>
         )
     }
