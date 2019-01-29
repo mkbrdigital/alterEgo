@@ -5,14 +5,14 @@ import * as api from '../../api';
 
 class XboxUserGames extends Component {
     state = {
-
+        titles: []
     };
 
     componentDidMount = async () => {
         try {
-            const {  } = await api.fetch360Games();
-            const {  } = await api.fetchXB1Games();
-            this.setState({});
+            // const {  } = await api.fetch360Games();
+            const { titles } = await api.fetchXB1Games();
+            this.setState({ titles });
         } catch (err) {
             // if (err.response.status === 404) this.props.history.push("404");
         }
@@ -26,6 +26,7 @@ class XboxUserGames extends Component {
     //   };
 
     render() {
+        console.log(this.state.titles)
         return (
             <div className="xbox-games-container">
                <ul>

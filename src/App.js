@@ -6,8 +6,8 @@ import Header from './Components/Navigation/Header';
 import Homepage from './Components/Pages/Homepage';
 import './normalize.css';
 import './reset.css';
-
-
+import XboxUserGames from './Components/Pages/XboxUserGames';
+import XboxUserProfile from './Components/Pages/XboxUserProfile';
 
 class App extends Component {
   render() {
@@ -16,6 +16,8 @@ class App extends Component {
         <div className="App">
           <Header/>
           <Route exact path="/" component={Homepage}/>
+          <Route exact path="/user/xb/games" component={XboxUserGames}/>
+          <Route exact path="/user/xb/profile" component={XboxUserProfile}/>
           {/* <Footer/> */}
         </div>
       </Router>
