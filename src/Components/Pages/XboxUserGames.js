@@ -5,23 +5,13 @@ import Loading from '../Misc/Loading';
 
 class XboxUserGames extends Component {
     state = {
-<<<<<<< HEAD
-        genre: ""
-=======
-        titles: [],
->>>>>>> b7410133a8304625f139776c82bcd2c50d0ff138
+        titles: []
     };
 
     componentDidMount = async () => {
         try {
-<<<<<<< HEAD
-            const { genre } = await api.fetchXB1Games();
-            this.setState({});
-=======
-            // const {  } = await api.fetch360Games();
             const { titles } = await api.fetchXB1Games();
             this.setState({ titles });
->>>>>>> b7410133a8304625f139776c82bcd2c50d0ff138
         } catch (err) {
             // if (err.response.status === 404) this.props.history.push("404");
         }
