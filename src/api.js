@@ -19,7 +19,8 @@ export const fetch360Games = async query => {
             Accept: "application/json"
           }
     });
-    return data;
+    // return data;
+    console.log(data);
 }
 
 export const fetchXB1Games = async query => {
@@ -29,5 +30,6 @@ export const fetchXB1Games = async query => {
             Accept: "application/json"
           }
     });
-    return data;
+    // return data;
+    console.log(data);
 }
