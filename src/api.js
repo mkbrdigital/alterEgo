@@ -10,6 +10,7 @@ export const fetchGamerTag = async query => {
           }
     });
     return data;
+    // console.log(data);
 }
 
 export const fetch360Games = async query => {
