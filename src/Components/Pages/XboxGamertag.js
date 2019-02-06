@@ -28,6 +28,7 @@ class XboxGamertag extends Component {
     //   };
 
     render() {
+        
         if (this.state.Gamertag.length === 0) return <Loading/>
         return (
                 <div className="columns XboxGamertag--container">

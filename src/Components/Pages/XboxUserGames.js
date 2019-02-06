@@ -25,11 +25,19 @@ class XboxUserGames extends Component {
     //   };
 
     render() {
-        console.log(this.state.titles);
+        const xboxOneGames = this.state.titles;
         if (!this.state.titles.length) return <Loading/>;
         return (
-            <div className="xbox-games-container">
-                <h1>Xbox games list goes here</h1>
+            <div className="xbox-games--container">
+            <p></p>
+                {xboxOneGames.map(xboxOneGame => {
+                    return (
+                        <div className="game--container" key={xboxOneGame.titleId}>
+                           <div className="name--container"><p className="game--name">{xboxOneGame.name}</p></div>
+                            <div className="percent--container"><p className="game--percent">{Math.floor((xboxOneGame.currentGamerscore / xboxOneGame.maxGamerscore) * 100)}%</p></div>
+                        </div>
+                    )
+                })}
             </div>
         )
     }

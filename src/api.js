@@ -21,7 +21,7 @@ export const fetch360Games = async query => {
           }
     });
     // return data;
-    console.log(data);
+    console.log(data, '360games');
 }
 
 export const fetchXB1Games = async query => {
@@ -31,6 +31,6 @@ export const fetchXB1Games = async query => {
             Accept: "application/json"
           }
     });
-    // return data;
-    console.log(data);
+    return data;
+    // console.log(data, 'xbox one games');
 }
